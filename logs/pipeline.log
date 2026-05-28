@@ -1,0 +1,154 @@
+2026-05-28 15:51:38,806:INFO:21:this is an Information message
+2026-05-28 15:53:57,273:INFO:21:this is an Information message
+2026-05-28 16:22:26,988:INFO:22:extraction started
+2026-05-28 16:22:26,988:CRITICAL:47:failed to extract [Errno 2] No such file or directory: '/home/user/Downloads/de_practice_dataset/project_workflow/outreach_calls_phase1.csv'
+2026-05-28 16:26:59,147:INFO:21:extraction started
+2026-05-28 16:26:59,147:CRITICAL:46:failed to extract [Errno 2] No such file or directory: '/home/user/Downloads/de_practice_dataset/project_workflow/outreach_calls_phase1.csv'
+2026-05-28 16:29:03,090:INFO:24:extraction started
+2026-05-28 16:29:03,090:CRITICAL:49:failed to extract [Errno 2] No such file or directory: '/home/user/Downloads/de_practice_dataset/project_workflow/outreach_calls_phase1.csv'
+2026-05-28 16:29:23,631:INFO:24:extraction started
+2026-05-28 16:29:23,631:CRITICAL:49:failed to extract [Errno 2] No such file or directory: '/home/user/Downloads/de_practice_dataset/project_workflow/outreach_calls_phase1.csv'
+2026-05-28 16:31:56,805:INFO:24:extraction started
+2026-05-28 16:31:56,811:INFO:45:sucessfully extracted /home/user/Downloads/de_practice_dataset/outreach_calls_phase1.csvwith 1200
+2026-05-28 16:31:56,815:INFO:45:sucessfully extracted /home/user/Downloads/de_practice_dataset/residents_2026_01.csvwith 520
+2026-05-28 16:31:56,828:INFO:45:sucessfully extracted /home/user/Downloads/de_practice_dataset/support_requests_january.jsonwith 400
+2026-05-28 17:53:59,636:INFO:23:Extraction pipeline started.
+2026-05-28 17:53:59,640:INFO:43:Successfully extracted outreach_calls_phase1.csv with 1200 rows.
+2026-05-28 17:53:59,643:INFO:43:Successfully extracted residents_2026_01.csv with 520 rows.
+2026-05-28 17:53:59,650:INFO:43:Successfully extracted support_requests_january.json with 400 rows.
+2026-05-28 17:53:59,650:INFO:98:Initializing data transformation pipeline.
+2026-05-28 17:53:59,650:INFO:67:Starting column profiling schema checks for outreach_calls_phase1.csv
+2026-05-28 17:53:59,672:INFO:109:Successfully profiled and typed structural data for: outreach_calls_phase1.csv
+2026-05-28 17:53:59,673:INFO:67:Starting column profiling schema checks for residents_2026_01.csv
+2026-05-28 17:53:59,698:INFO:109:Successfully profiled and typed structural data for: residents_2026_01.csv
+2026-05-28 17:53:59,698:INFO:67:Starting column profiling schema checks for support_requests_january.json
+2026-05-28 17:53:59,708:INFO:109:Successfully profiled and typed structural data for: support_requests_january.json
+2026-05-28 17:53:59,708:INFO:117:Global data transformation pipeline completed successfully.
+2026-05-28 18:26:22,084:INFO:20:=========================================
+2026-05-28 18:26:22,084:INFO:21:         STARTING PIPELINE RUN           
+2026-05-28 18:26:22,084:INFO:22:=========================================
+2026-05-28 18:26:22,084:INFO:26:[ORCHESTRATOR] Initializing E-T-L Phase 1: Extraction
+2026-05-28 18:26:22,084:INFO:23:Extraction pipeline started.
+2026-05-28 18:26:22,088:INFO:43:Successfully extracted outreach_calls_phase1.csv with 1200 rows.
+2026-05-28 18:26:22,091:INFO:43:Successfully extracted residents_2026_01.csv with 520 rows.
+2026-05-28 18:26:22,098:INFO:43:Successfully extracted support_requests_january.json with 400 rows.
+2026-05-28 18:26:22,098:INFO:28:[ORCHESTRATOR] Phase 1 Complete. Extracted 3 payloads.
+2026-05-28 18:26:22,098:INFO:31:[ORCHESTRATOR] Initializing E-T-L Phase 2: Transformation
+2026-05-28 18:26:22,098:INFO:98:Initializing data transformation pipeline.
+2026-05-28 18:26:22,099:INFO:67:Starting column profiling schema checks for outreach_calls_phase1.csv
+2026-05-28 18:26:22,121:INFO:109:Successfully profiled and typed structural data for: outreach_calls_phase1.csv
+2026-05-28 18:26:22,122:INFO:67:Starting column profiling schema checks for residents_2026_01.csv
+2026-05-28 18:26:22,138:INFO:109:Successfully profiled and typed structural data for: residents_2026_01.csv
+2026-05-28 18:26:22,139:INFO:67:Starting column profiling schema checks for support_requests_january.json
+2026-05-28 18:26:22,157:INFO:109:Successfully profiled and typed structural data for: support_requests_january.json
+2026-05-28 18:26:22,157:INFO:117:Global data transformation pipeline completed successfully.
+2026-05-28 18:26:22,157:INFO:33:[ORCHESTRATOR] Phase 2 Complete. Structural schemas applied cleanly.
+2026-05-28 18:26:22,157:INFO:36:[ORCHESTRATOR] Initializing E-T-L Phase 3: Snowflake Database Load
+2026-05-28 18:26:22,157:INFO:18:Initializing connection session with Snowflake Warehouse...
+2026-05-28 18:26:31,840:INFO:30:Successfully established connection session with Snowflake.
+2026-05-28 18:26:31,841:INFO:32:Initiating bulk upload for outreach_calls_phase1.csv into Snowflake table STG_OUTREACH_CALLS_RAW (1200 rows)...
+2026-05-28 18:26:31,843:CRITICAL:55:Fatal load pipeline failure encountered: Missing optional dependency: pandas
+2026-05-28 18:26:33,110:INFO:60:Snowflake database connection closed cleanly.
+2026-05-28 18:26:33,111:CRITICAL:50:=========================================
+2026-05-28 18:26:33,111:CRITICAL:51: PIPELINE RUN FAILED | Interrupted after 11.03s
+2026-05-28 18:26:33,111:CRITICAL:52: Error Details: Missing optional dependency: pandas
+2026-05-28 18:26:33,111:CRITICAL:53:=========================================
+2026-05-28 18:32:22,914:INFO:20:=========================================
+2026-05-28 18:32:22,914:INFO:21:         STARTING PIPELINE RUN           
+2026-05-28 18:32:22,914:INFO:22:=========================================
+2026-05-28 18:32:22,914:INFO:26:[ORCHESTRATOR] Initializing E-T-L Phase 1: Extraction
+2026-05-28 18:32:22,914:INFO:23:Extraction pipeline started.
+2026-05-28 18:32:22,919:INFO:43:Successfully extracted outreach_calls_phase1.csv with 1200 rows.
+2026-05-28 18:32:22,922:INFO:43:Successfully extracted residents_2026_01.csv with 520 rows.
+2026-05-28 18:32:22,928:INFO:43:Successfully extracted support_requests_january.json with 400 rows.
+2026-05-28 18:32:22,928:INFO:28:[ORCHESTRATOR] Phase 1 Complete. Extracted 3 payloads.
+2026-05-28 18:32:22,928:INFO:31:[ORCHESTRATOR] Initializing E-T-L Phase 2: Transformation
+2026-05-28 18:32:22,929:INFO:98:Initializing data transformation pipeline.
+2026-05-28 18:32:22,929:INFO:67:Starting column profiling schema checks for outreach_calls_phase1.csv
+2026-05-28 18:32:22,952:INFO:109:Successfully profiled and typed structural data for: outreach_calls_phase1.csv
+2026-05-28 18:32:22,953:INFO:67:Starting column profiling schema checks for residents_2026_01.csv
+2026-05-28 18:32:22,978:INFO:109:Successfully profiled and typed structural data for: residents_2026_01.csv
+2026-05-28 18:32:22,979:INFO:67:Starting column profiling schema checks for support_requests_january.json
+2026-05-28 18:32:22,998:INFO:109:Successfully profiled and typed structural data for: support_requests_january.json
+2026-05-28 18:32:22,999:INFO:117:Global data transformation pipeline completed successfully.
+2026-05-28 18:32:22,999:INFO:33:[ORCHESTRATOR] Phase 2 Complete. Structural schemas applied cleanly.
+2026-05-28 18:32:22,999:INFO:36:[ORCHESTRATOR] Initializing E-T-L Phase 3: Snowflake Database Load
+2026-05-28 18:32:23,000:INFO:18:Initializing connection session with Snowflake Warehouse...
+2026-05-28 18:32:32,731:INFO:30:Successfully established connection session with Snowflake.
+2026-05-28 18:32:32,732:INFO:32:Initiating bulk upload for outreach_calls_phase1.csv into Snowflake table STG_OUTREACH_CALLS_RAW (1200 rows)...
+2026-05-28 18:32:46,369:INFO:48:Successfully staged 1200 rows into STG_OUTREACH_CALLS_RAW across 1 chunks.
+2026-05-28 18:32:46,369:INFO:32:Initiating bulk upload for residents_2026_01.csv into Snowflake table STG_RESIDENTS_RAW (520 rows)...
+2026-05-28 18:32:50,550:INFO:48:Successfully staged 520 rows into STG_RESIDENTS_RAW across 1 chunks.
+2026-05-28 18:32:50,550:INFO:32:Initiating bulk upload for support_requests_january.json into Snowflake table STG_SUPPORT_REQUESTS_RAW (400 rows)...
+2026-05-28 18:32:54,219:INFO:48:Successfully staged 400 rows into STG_SUPPORT_REQUESTS_RAW across 1 chunks.
+2026-05-28 18:32:54,750:INFO:60:Snowflake database connection closed cleanly.
+2026-05-28 18:32:54,751:INFO:38:[ORCHESTRATOR] Phase 3 Complete. Data pushed to warehouse.
+2026-05-28 18:32:54,751:INFO:42:=========================================
+2026-05-28 18:32:54,752:INFO:43: PIPELINE RUN SUCCESSFUL | Duration: 31.84s
+2026-05-28 18:32:54,752:INFO:44:=========================================
+2026-05-28 18:36:43,725:INFO:20:=========================================
+2026-05-28 18:36:43,725:INFO:21:         STARTING PIPELINE RUN           
+2026-05-28 18:36:43,725:INFO:22:=========================================
+2026-05-28 18:36:43,725:INFO:26:[ORCHESTRATOR] Initializing E-T-L Phase 1: Extraction
+2026-05-28 18:36:43,725:INFO:23:Extraction pipeline started.
+2026-05-28 18:36:43,729:INFO:43:Successfully extracted outreach_calls_phase1.csv with 1200 rows.
+2026-05-28 18:36:43,733:INFO:43:Successfully extracted residents_2026_01.csv with 520 rows.
+2026-05-28 18:36:43,740:INFO:43:Successfully extracted support_requests_january.json with 400 rows.
+2026-05-28 18:36:43,740:INFO:28:[ORCHESTRATOR] Phase 1 Complete. Extracted 3 payloads.
+2026-05-28 18:36:43,741:INFO:31:[ORCHESTRATOR] Initializing E-T-L Phase 2: Transformation
+2026-05-28 18:36:43,741:INFO:98:Initializing data transformation pipeline.
+2026-05-28 18:36:43,741:INFO:67:Starting column profiling schema checks for outreach_calls_phase1.csv
+2026-05-28 18:36:43,762:INFO:109:Successfully profiled and typed structural data for: outreach_calls_phase1.csv
+2026-05-28 18:36:43,762:INFO:67:Starting column profiling schema checks for residents_2026_01.csv
+2026-05-28 18:36:43,778:INFO:109:Successfully profiled and typed structural data for: residents_2026_01.csv
+2026-05-28 18:36:43,778:INFO:67:Starting column profiling schema checks for support_requests_january.json
+2026-05-28 18:36:43,784:INFO:109:Successfully profiled and typed structural data for: support_requests_january.json
+2026-05-28 18:36:43,784:INFO:117:Global data transformation pipeline completed successfully.
+2026-05-28 18:36:43,784:INFO:33:[ORCHESTRATOR] Phase 2 Complete. Structural schemas applied cleanly.
+2026-05-28 18:36:43,784:INFO:36:[ORCHESTRATOR] Initializing E-T-L Phase 3: Snowflake Database Load
+2026-05-28 18:36:43,784:INFO:18:Initializing connection session with Snowflake Warehouse...
+2026-05-28 18:36:53,354:INFO:30:Successfully established connection session with Snowflake.
+2026-05-28 18:36:53,355:INFO:32:Initiating bulk upload for outreach_calls_phase1.csv into Snowflake table STG_OUTREACH_CALLS_RAW (1200 rows)...
+2026-05-28 18:37:00,124:INFO:48:Successfully staged 1200 rows into STG_OUTREACH_CALLS_RAW across 1 chunks.
+2026-05-28 18:37:00,124:INFO:32:Initiating bulk upload for residents_2026_01.csv into Snowflake table STG_RESIDENTS_RAW (520 rows)...
+2026-05-28 18:37:04,107:INFO:48:Successfully staged 520 rows into STG_RESIDENTS_RAW across 1 chunks.
+2026-05-28 18:37:04,108:INFO:32:Initiating bulk upload for support_requests_january.json into Snowflake table STG_SUPPORT_REQUESTS_RAW (400 rows)...
+2026-05-28 18:37:08,035:INFO:48:Successfully staged 400 rows into STG_SUPPORT_REQUESTS_RAW across 1 chunks.
+2026-05-28 18:37:08,511:INFO:60:Snowflake database connection closed cleanly.
+2026-05-28 18:37:08,512:INFO:38:[ORCHESTRATOR] Phase 3 Complete. Data pushed to warehouse.
+2026-05-28 18:37:08,512:INFO:42:=========================================
+2026-05-28 18:37:08,512:INFO:43: PIPELINE RUN SUCCESSFUL | Duration: 24.79s
+2026-05-28 18:37:08,512:INFO:44:=========================================
+2026-05-28 18:38:05,106:INFO:20:=========================================
+2026-05-28 18:38:05,107:INFO:21:         STARTING PIPELINE RUN           
+2026-05-28 18:38:05,107:INFO:22:=========================================
+2026-05-28 18:38:05,107:INFO:26:[ORCHESTRATOR] Initializing E-T-L Phase 1: Extraction
+2026-05-28 18:38:05,107:INFO:23:Extraction pipeline started.
+2026-05-28 18:38:05,111:INFO:43:Successfully extracted outreach_calls_phase1.csv with 1200 rows.
+2026-05-28 18:38:05,115:INFO:43:Successfully extracted residents_2026_01.csv with 520 rows.
+2026-05-28 18:38:05,122:INFO:43:Successfully extracted support_requests_january.json with 400 rows.
+2026-05-28 18:38:05,122:INFO:28:[ORCHESTRATOR] Phase 1 Complete. Extracted 3 payloads.
+2026-05-28 18:38:05,122:INFO:31:[ORCHESTRATOR] Initializing E-T-L Phase 2: Transformation
+2026-05-28 18:38:05,122:INFO:98:Initializing data transformation pipeline.
+2026-05-28 18:38:05,122:INFO:67:Starting column profiling schema checks for outreach_calls_phase1.csv
+2026-05-28 18:38:05,140:INFO:109:Successfully profiled and typed structural data for: outreach_calls_phase1.csv
+2026-05-28 18:38:05,140:INFO:67:Starting column profiling schema checks for residents_2026_01.csv
+2026-05-28 18:38:05,159:INFO:109:Successfully profiled and typed structural data for: residents_2026_01.csv
+2026-05-28 18:38:05,159:INFO:67:Starting column profiling schema checks for support_requests_january.json
+2026-05-28 18:38:05,173:INFO:109:Successfully profiled and typed structural data for: support_requests_january.json
+2026-05-28 18:38:05,173:INFO:117:Global data transformation pipeline completed successfully.
+2026-05-28 18:38:05,173:INFO:33:[ORCHESTRATOR] Phase 2 Complete. Structural schemas applied cleanly.
+2026-05-28 18:38:05,173:INFO:36:[ORCHESTRATOR] Initializing E-T-L Phase 3: Snowflake Database Load
+2026-05-28 18:38:05,174:INFO:18:Initializing connection session with Snowflake Warehouse...
+2026-05-28 18:38:14,663:INFO:30:Successfully established connection session with Snowflake.
+2026-05-28 18:38:14,663:INFO:32:Initiating bulk upload for outreach_calls_phase1.csv into Snowflake table STG_OUTREACH_CALLS_RAW (1200 rows)...
+2026-05-28 18:38:20,805:INFO:48:Successfully staged 1200 rows into STG_OUTREACH_CALLS_RAW across 1 chunks.
+2026-05-28 18:38:20,806:INFO:32:Initiating bulk upload for residents_2026_01.csv into Snowflake table STG_RESIDENTS_RAW (520 rows)...
+2026-05-28 18:38:24,922:INFO:48:Successfully staged 520 rows into STG_RESIDENTS_RAW across 1 chunks.
+2026-05-28 18:38:24,922:INFO:32:Initiating bulk upload for support_requests_january.json into Snowflake table STG_SUPPORT_REQUESTS_RAW (400 rows)...
+2026-05-28 18:38:28,602:INFO:48:Successfully staged 400 rows into STG_SUPPORT_REQUESTS_RAW across 1 chunks.
+2026-05-28 18:38:29,000:INFO:60:Snowflake database connection closed cleanly.
+2026-05-28 18:38:29,000:INFO:38:[ORCHESTRATOR] Phase 3 Complete. Data pushed to warehouse.
+2026-05-28 18:38:29,000:INFO:42:=========================================
+2026-05-28 18:38:29,000:INFO:43: PIPELINE RUN SUCCESSFUL | Duration: 23.89s
+2026-05-28 18:38:29,000:INFO:44:=========================================

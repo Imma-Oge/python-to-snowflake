@@ -1,0 +1,8 @@
+2026-05-28 17:40:18,565:INFO:24:extraction started
+2026-05-28 17:40:18,569:INFO:45:sucessfully extracted /home/user/Downloads/de_practice_dataset/outreach_calls_phase1.csvwith 1200
+2026-05-28 17:40:18,573:INFO:45:sucessfully extracted /home/user/Downloads/de_practice_dataset/residents_2026_01.csvwith 520
+2026-05-28 17:40:18,580:INFO:45:sucessfully extracted /home/user/Downloads/de_practice_dataset/support_requests_january.jsonwith 400
+2026-05-28 17:40:18,580:INFO:97:Initializing global data transformation pipeline.
+2026-05-28 17:40:18,580:INFO:67:Starting column profiling for outreach_calls_phase1.csv with 1200 rows.
+2026-05-28 17:40:18,601:INFO:105:Successfully profiled and typed data for: outreach_calls_phase1.csv
+2026-05-28 17:40:18,601:CRITICAL:134:Local workflow pipeline failed during test run execution: No active exception to reraise
