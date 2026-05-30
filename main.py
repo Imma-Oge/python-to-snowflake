@@ -41,6 +41,7 @@ def run_pipeline():
         execution_time = round(time.time() - start_time, 2)
         logger.info("=========================================")
         logger.info(f" PIPELINE RUN SUCCESSFUL | Duration: {execution_time}s")
+
         logger.info("=========================================")
         print(f"\n Pipeline finished successfully in {execution_time} seconds!")
 
